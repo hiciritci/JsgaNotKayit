@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|c:\\users\\halil\\desktop\\jsga ders anlat\u0131m\\notkayit\\views\\ogrenci\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|solutionrelative:views\\ogrenci\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|c:\\users\\halil\\desktop\\jsga ders anlat\u0131m\\notkayit\\controllers\\ogrencicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|solutionrelative:controllers\\ogrencicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|c:\\users\\halil\\desktop\\jsga ders anlat\u0131m\\notkayit\\models\\viewmodels\\ogrenciadrestmlviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|solutionrelative:models\\viewmodels\\ogrenciadrestmlviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|c:\\users\\halil\\desktop\\jsga ders anlat\u0131m\\notkayit\\models\\datacontext\\notkayitdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|solutionrelative:models\\datacontext\\notkayitdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|c:\\users\\halil\\desktop\\jsga ders anlat\u0131m\\notkayit\\views\\ogrenci\\adrescreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|solutionrelative:views\\ogrenci\\adrescreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|c:\\users\\halil\\desktop\\jsga ders anlat\u0131m\\notkayit\\views\\ogrenci\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|solutionrelative:views\\ogrenci\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|c:\\users\\halil\\desktop\\jsga ders anlat\u0131m\\notkayit\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|c:\\users\\halil\\desktop\\jsga ders anlat\u0131m\\notkayit\\models\\entities\\nottml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|solutionrelative:models\\entities\\nottml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|c:\\users\\halil\\desktop\\jsga ders anlat\u0131m\\notkayit\\models\\entities\\derstml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|solutionrelative:models\\entities\\derstml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|c:\\users\\halil\\desktop\\jsga ders anlat\u0131m\\notkayit\\models\\entities\\notkodtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|solutionrelative:models\\entities\\notkodtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|c:\\users\\halil\\desktop\\jsga ders anlat\u0131m\\notkayit\\models\\entities\\dersalankodtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,28 +31,8 @@
       "RelativeMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|solutionrelative:models\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|c:\\users\\halil\\desktop\\jsga ders anlat\u0131m\\notkayit\\models\\entities\\ogrencitml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|solutionrelative:models\\entities\\ogrencitml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|c:\\users\\halil\\desktop\\jsga ders anlat\u0131m\\notkayit\\models\\entities\\ogrenciiletisim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|solutionrelative:models\\entities\\ogrenciiletisim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|c:\\users\\halil\\desktop\\jsga ders anlat\u0131m\\notkayit\\models\\entities\\ogrenciadres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|solutionrelative:models\\entities\\ogrenciadres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|c:\\users\\halil\\desktop\\jsga ders anlat\u0131m\\notkayit\\models\\datacontext\\notkayitdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|solutionrelative:models\\datacontext\\notkayitdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|c:\\users\\halil\\desktop\\jsga ders anlat\u0131m\\notkayit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|c:\\users\\halil\\desktop\\jsga ders anlat\u0131m\\notkayit\\views\\ogrenci\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|solutionrelative:views\\ogrenci\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|c:\\users\\halil\\desktop\\jsga ders anlat\u0131m\\notkayit\\views\\ogrenci\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|solutionrelative:views\\ogrenci\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9217DCCD-65F0-42EC-84E4-5B48D1B22A97}|NotKayit.csproj|c:\\users\\halil\\desktop\\jsga ders anlat\u0131m\\notkayit\\notkayit.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -87,43 +59,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Views\\Ogrenci\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Ogrenci\\Details.cshtml",
-              "ToolTip": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Views\\Ogrenci\\Details.cshtml",
-              "RelativeToolTip": "Views\\Ogrenci\\Details.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAcwCcAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-17T18:09:22.126Z",
+              "Title": "OgrenciController.cs",
+              "DocumentMoniker": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Controllers\\OgrenciController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OgrenciController.cs",
+              "ToolTip": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Controllers\\OgrenciController.cs",
+              "RelativeToolTip": "Controllers\\OgrenciController.cs",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAowKQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-10T17:16:47.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OgrenciAdresTmlViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Models\\ViewModels\\OgrenciAdresTmlViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ViewModels\\OgrenciAdresTmlViewModel.cs",
+              "ToolTip": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Models\\ViewModels\\OgrenciAdresTmlViewModel.cs",
+              "RelativeToolTip": "Models\\ViewModels\\OgrenciAdresTmlViewModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T12:20:53.298Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-17T17:29:14.222Z"
+              "Title": "AdresCreate.cshtml",
+              "DocumentMoniker": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Views\\Ogrenci\\AdresCreate.cshtml",
+              "RelativeDocumentMoniker": "Views\\Ogrenci\\AdresCreate.cshtml",
+              "ToolTip": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Views\\Ogrenci\\AdresCreate.cshtml",
+              "RelativeToolTip": "Views\\Ogrenci\\AdresCreate.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-20T12:18:51.79Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Models\\Entities\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\BaseEntity.cs",
-              "ToolTip": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Models\\Entities\\BaseEntity.cs",
-              "RelativeToolTip": "Models\\Entities\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T14:57:36.963Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "DersAlanKodTml.cs",
               "DocumentMoniker": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Models\\Entities\\DersAlanKodTml.cs",
               "RelativeDocumentMoniker": "Models\\Entities\\DersAlanKodTml.cs",
@@ -131,131 +105,64 @@
               "RelativeToolTip": "Models\\Entities\\DersAlanKodTml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T14:49:38.496Z"
+              "WhenOpened": "2026-02-17T14:49:38.496Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "NotKodTml.cs",
-              "DocumentMoniker": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Models\\Entities\\NotKodTml.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\NotKodTml.cs",
-              "ToolTip": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Models\\Entities\\NotKodTml.cs",
-              "RelativeToolTip": "Models\\Entities\\NotKodTml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Models\\Entities\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Models\\Entities\\BaseEntity.cs",
+              "RelativeToolTip": "Models\\Entities\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-10T16:50:54.317Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DersTml.cs",
-              "DocumentMoniker": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Models\\Entities\\DersTml.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\DersTml.cs",
-              "ToolTip": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Models\\Entities\\DersTml.cs",
-              "RelativeToolTip": "Models\\Entities\\DersTml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T14:50:05.433Z"
+              "WhenOpened": "2026-02-17T14:57:36.963Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "NotTml.cs",
-              "DocumentMoniker": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Models\\Entities\\NotTml.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\NotTml.cs",
-              "ToolTip": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Models\\Entities\\NotTml.cs",
-              "RelativeToolTip": "Models\\Entities\\NotTml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T14:48:52.26Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OgrenciController.cs",
-              "DocumentMoniker": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Controllers\\OgrenciController.cs",
-              "RelativeDocumentMoniker": "Controllers\\OgrenciController.cs",
-              "ToolTip": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Controllers\\OgrenciController.cs",
-              "RelativeToolTip": "Controllers\\OgrenciController.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAADwv2QAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-10T17:16:47.914Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Views\\Ogrenci\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Ogrenci\\Index.cshtml",
               "ToolTip": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Views\\Ogrenci\\Index.cshtml",
               "RelativeToolTip": "Views\\Ogrenci\\Index.cshtml",
-              "ViewState": "AgIAACsAAAAAAAAAAAAAwDsAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADQAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-04T19:41:46.947Z"
+              "WhenOpened": "2026-02-04T19:41:46.947Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "OgrenciTml.cs",
-              "DocumentMoniker": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Models\\Entities\\OgrenciTml.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\OgrenciTml.cs",
-              "ToolTip": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Models\\Entities\\OgrenciTml.cs",
-              "RelativeToolTip": "Models\\Entities\\OgrenciTml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-10T17:08:53.555Z"
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Views\\Ogrenci\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Ogrenci\\Details.cshtml",
+              "ToolTip": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Views\\Ogrenci\\Details.cshtml",
+              "RelativeToolTip": "Views\\Ogrenci\\Details.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-17T18:09:22.126Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "OgrenciIletisim.cs",
-              "DocumentMoniker": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Models\\Entities\\OgrenciIletisim.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\OgrenciIletisim.cs",
-              "ToolTip": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Models\\Entities\\OgrenciIletisim.cs",
-              "RelativeToolTip": "Models\\Entities\\OgrenciIletisim.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-10T16:55:38.753Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T17:49:57.89Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "NotKayitDbContext.cs",
               "DocumentMoniker": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Models\\DataContext\\NotKayitDbContext.cs",
               "RelativeDocumentMoniker": "Models\\DataContext\\NotKayitDbContext.cs",
               "ToolTip": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Models\\DataContext\\NotKayitDbContext.cs",
               "RelativeToolTip": "Models\\DataContext\\NotKayitDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T16:57:41.676Z"
+              "WhenOpened": "2026-02-05T16:57:41.676Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "OgrenciAdres.cs",
-              "DocumentMoniker": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Models\\Entities\\OgrenciAdres.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\OgrenciAdres.cs",
-              "ToolTip": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Models\\Entities\\OgrenciAdres.cs",
-              "RelativeToolTip": "Models\\Entities\\OgrenciAdres.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-17T14:47:53.119Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 8,
               "Title": "NotKayit.csproj",
               "DocumentMoniker": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\NotKayit.csproj",
               "RelativeDocumentMoniker": "NotKayit.csproj",
@@ -267,19 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Views\\Ogrenci\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Ogrenci\\Create.cshtml",
-              "ToolTip": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Views\\Ogrenci\\Create.cshtml",
-              "RelativeToolTip": "Views\\Ogrenci\\Create.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC8AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-04T19:38:33.622Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 10,
               "Title": "20260210171324_v_3.cs",
               "DocumentMoniker": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Migrations\\20260210171324_v_3.cs",
               "RelativeDocumentMoniker": "Migrations\\20260210171324_v_3.cs",
@@ -291,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 9,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\halil\\Desktop\\JSGA Ders Anlat\u0131m\\NotKayit\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",

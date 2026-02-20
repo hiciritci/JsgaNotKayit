@@ -5,6 +5,7 @@ namespace NotKayit.Models.Entities
 {
     public class DersTml : BaseEntity
     {
+        [Key]
         public int Id { get; set; }
 
         [Required, MaxLength(100)]
@@ -12,8 +13,8 @@ namespace NotKayit.Models.Entities
 
         public short KrediSayisi { get; set; } 
 
-        public int DersAlanKodId { get; set; }
-        public DersAlanKodTml DersAlanKod { get; set; } = null!;
+        public int DersAlanKodTmlId { get; set; }
+        public DersAlanKodTml DersAlanKodTml { get; set; } = null!;
         public ICollection<NotTml> Notlar { get; set; } = new List<NotTml>();
         public ICollection<OgrenciDers> OgrenciDersler { get; set; } = new List<OgrenciDers>();
     }

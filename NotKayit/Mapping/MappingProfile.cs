@@ -8,6 +8,7 @@ namespace NotKayit.Mapping
         public MappingProfile()
         {  
             CreateMap<OgrenciTml, OgrenciTmlViewModel>().ReverseMap();
+           // CreateMap<OgrenciAdres, OgrenciAdresTmlViewModel>().ReverseMap();
         }
     }
 }

@@ -4,9 +4,10 @@
     {
         public int Id { get; set; }
 
-        public int OgrenciTmlId { get; set; }
-        public int DersId { get; set; }  
-        public OgrenciTml Ogrenci { get; set; } = null!;
-        public DersTml Ders { get; set; } = null!;
+        public long OgrenciTmlId { get; set; }
+      
+        public OgrenciTml OgrenciTml { get; set; } 
+        public int DersTmlId { get; set; }  
+        public DersTml DersTml { get; set; } 
     }
 }

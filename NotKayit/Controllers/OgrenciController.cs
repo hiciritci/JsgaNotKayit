@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using NotKayit.Models.DataContext;
 using NotKayit.Models.Entities;
 using NotKayit.Models.ViewModels;
+using static NotKayit.Models.ViewModels.OgrenciAdresTmlViewModel;
 
 namespace NotKayit.Controllers
 {
@@ -108,5 +109,74 @@ namespace NotKayit.Controllers
             var model = _mapper.Map<OgrenciTmlViewModel>(entity);
             return View(model);
         }
+
+
+
+
+
+
+
+
+
+        // GET: /Ogrenci/AdresCreate
+        public async Task<IActionResult> AdresCreate(long ogrenciId)
+        {
+            var ogrenciExists = await _context.OgrenciTml.AnyAsync(x => x.Id == ogrenciId);
+            if (!ogrenciExists) return NotFound("Öğrenci bulunamadı.");
+
+            var adresler = await _context.Set<OgrenciAdres>() // <-- senin adres entity adın neyse onu yaz
+                .AsNoTracking()
+                .Where(x => x.OgrenciTmlId == ogrenciId)
+                .OrderByDescending(x => x.Id)
+                .Select(x => new OgrenciAdresItemVm
+                {
+                    Id = x.Id,
+                    Adres = x.Adres
+                })
+                .ToListAsync();
+
+            var vm = new OgrenciAdresTmlViewModel
+            {
+                OgrenciTmlId = ogrenciId,
+                AdresListesi = adresler
+            };
+
+            return View(vm);
+        }
+
+
+
+
+        // POST: /Ogrenci/AdresCreate
+        [HttpPost] 
+        public async Task<IActionResult> AdresCreate(OgrenciAdresTmlViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                // Hata varsa listeyi tekrar doldurup aynı view'a dön
+                model.AdresListesi = await _context.Set<OgrenciAdres>()
+                    .AsNoTracking()
+                    .Where(x => x.OgrenciTmlId == model.OgrenciTmlId)
+                    .OrderByDescending(x => x.Id)
+                    .Select(x => new OgrenciAdresItemVm { Id = x.Id, Adres = x.Adres })
+                    .ToListAsync();
+
+                return View(model);
+            }
+
+            var entity = new OgrenciAdres
+            {
+                OgrenciTmlId = model.OgrenciTmlId,
+                Adres = model.Adres
+            };
+
+            _context.Set<OgrenciAdres>().Add(entity);
+            await _context.SaveChangesAsync();
+
+            // aynı sayfaya geri dön, yeni listeyle
+            return RedirectToAction(nameof(AdresCreate), new { ogrenciId = model.OgrenciTmlId });
+        }
+
+
     }
 }

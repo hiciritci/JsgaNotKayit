@@ -1,0 +1,62 @@
+﻿@model NotKayit.Models.ViewModels.OgrenciAdresTmlViewModel
+
+@{
+    ViewData["Title"] = "Yeni Adres";
+}
+
+<h2>Adresler</h2>
+
+@if (Model.AdresListesi == null || !Model.AdresListesi.Any())
+{
+    <div class="alert alert-info">Bu öğrenciye ait kayıtlı adres yok.</div>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Adres</th>
+                <th style="width:140px;">İşlem</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var a in Model.AdresListesi)
+            {
+                <tr>
+                    <td>@a.Adres</td>
+                    <td>
+                        <form asp-action="AdresDelete" method="post" style="display:inline;">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="ogrenciAdresId" value="@a.Id" />
+                            <input type="hidden" name="ogrenciId" value="@Model.OgrenciTmlId" />
+                            <button type="submit" class="btn btn-danger btn-sm">Sil</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<hr class="my-4" />
+
+<h2>Yeni Adres Ekle</h2>
+
+<form asp-action="AdresCreate" method="post">
+    @Html.AntiForgeryToken()
+
+    <input type="hidden" asp-for="OgrenciTmlId" />
+
+    <div class="mb-3">
+        <label asp-for="Adres" class="form-label"></label>
+        <textarea asp-for="Adres" class="form-control" rows="3"></textarea>
+        <span asp-validation-for="Adres" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Kaydet</button>
+    <a class="btn btn-secondary" asp-controller="Adres" asp-action="Index" asp-route-ogrenciId="@Model.OgrenciTmlId">Vazgeç</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
