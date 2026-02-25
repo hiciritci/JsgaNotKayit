@@ -5,68 +5,131 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2 class="mb-4"><i class="bi bi-people"></i> @ViewData["Title"]</h2>
+<div class="row">
+    <div class="col-12">
 
-<div class="table-responsive">
-    <table class="table table-striped table-hover align-middle">
-        <thead class="table-primary">
-            <tr>
-                <th>#</th>
-                <th>Adı</th>
-                <th>Soyadı</th>
-                <th>Doğum Tarihi</th>
-                <th></th>
-                <th class="text-end">İşlemler</th>
-            </tr>
-        </thead>
-        <tbody>
-            @if (!Model.Any())
-            {
-                <tr>
-                    <td colspan="6" class="text-center text-muted py-4">
-                        Kayıtlı öğrenci bulunamadı. <a asp-action="Create">Yeni ekleyin.</a>
-                    </td>
-                </tr>
-            }
-            else
-            {
-                int i = 1;
-                foreach (var ogrenci in Model)
+        <div class="card card-primary card-outline">
+            <div class="card-header">
+                <h3 class="card-title">
+                    <i class="fas fa-users mr-2"></i> @ViewData["Title"]
+                </h3>
+
+                <div class="card-tools">
+                    <a asp-action="Create" class="btn btn-primary btn-sm">
+                        <i class="fas fa-plus"></i> Yeni Öğrenci
+                    </a>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <table id="ogrenciTable" class="table table-bordered table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th style="width:60px">#</th>
+                            <th>Adı</th>
+                            <th>Soyadı</th>
+                            <th style="width:140px">Doğum Tarihi</th>
+                            <th style="width:120px">Yaş</th>
+                            <th class="text-right" style="width:360px">İşlemler</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @{
+                            int i = 1;
+                        }
+                        @foreach (var ogrenci in Model ?? Enumerable.Empty<NotKayit.Models.ViewModels.OgrenciTmlViewModel>())
+                        {
+                            <tr>
+                                <td>@i</td>
+                                <td>@ogrenci.Ad</td>
+                                <td>@ogrenci.Soyad</td>
+                                <td>@ogrenci.DogumTarihi.ToString("dd.MM.yyyy")</td>
+                                <td>@ogrenci.Yas</td>
+
+                                <td class="text-right">
+                                    <div class="btn-group btn-group-sm" role="group">
+                                        <a asp-action="Details" asp-route-id="@ogrenci.Id" class="btn btn-outline-primary" title="Görüntüle">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+
+                                        <a asp-action="Edit" asp-route-id="@ogrenci.Id" class="btn btn-outline-warning" title="Düzenle">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
+
+                                        <a class="btn btn-outline-info"
+                                           asp-controller="Ogrenci"
+                                           asp-action="AdresCreate"
+                                           asp-route-ogrenciId="@ogrenci.Id"
+                                           title="Adresler">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </a>
+
+                                        <a asp-action="Delete" asp-route-id="@ogrenci.Id"
+                                           class="btn btn-outline-danger"
+                                           onclick="return confirm('Bu kaydı silmek istediğinize emin misiniz?');"
+                                           title="Sil">
+                                            <i class="fas fa-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            i++;
+                        }
+                    </tbody>
+                </table>
+
+                @* Model boşsa DataTables yerine bu uyarı gözüksün *@
+                @if (Model == null || !Model.Any())
                 {
-                    <tr>
-                        <td>@i</td>
-                        <td>@ogrenci.Ad</td>
-                        <td>@ogrenci.Soyad</td>
-                        <td>@ogrenci.DogumTarihi.ToString("dd.MM.yyyy")</td>
-                        <td>YAS HESAPLANIP BU ALANA @ogrenci.Yas</td>
-
-                        <td class="text-end">
-                            <a asp-action="Details" asp-route-id="@ogrenci.Id" class="btn btn-sm btn-outline-primary me-1">
-                                <i class="bi bi-eye"></i> Görüntüle
-                            </a>
-                            <a asp-action="Edit" asp-route-id="@ogrenci.Id" class="btn btn-sm btn-outline-warning me-1">
-                                <i class="bi bi-pencil"></i> Düzenle
-                            </a>
-                            <a class="btn btn-info btn-sm"
-                               asp-controller="Ogrenci"
-                               asp-action="AdresCreate"
-                               asp-route-ogrenciId="@ogrenci.Id">
-                                Adresler
-                            </a>
-                            <a asp-action="Delete" asp-route-id="@ogrenci.Id"
-                               class="btn btn-sm btn-outline-danger"
-                               onclick="return confirm('Bu kaydı silmek istediğinize emin misiniz?');">
-                                <i class="bi bi-trash"></i> Sil
-                            </a>
-                        </td>
-                    </tr>
-                    i++;
+                    <div class="alert alert-info mt-3 mb-0">
+                        <i class="fas fa-info-circle mr-1"></i>
+                        Kayıtlı öğrenci bulunamadı.
+                        <a asp-action="Create" class="alert-link">Yeni öğrenci ekleyin.</a>
+                    </div>
                 }
-            }
-        </tbody>
-    </table>
+            </div>
+
+            <div class="card-footer text-muted">
+                Toplam: <strong>@(Model?.Count() ?? 0)</strong> öğrenci
+            </div>
+        </div>
+    </div>
 </div>
 
+@section Styles {
+    <!-- DataTables -->
+    <link rel="stylesheet" href="~/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" href="~/plugins/datatables-responsive/css/responsive.bootstrap4.min.css" />
+}
+
 @section Scripts {
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.js"></script>
+    <!-- DataTables -->
+    <script src="~/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+
+    <script>
+        $(function () {
+            // Model boşsa tabloyu datatable yapmaya gerek yok
+            var hasRow = $('#ogrenciTable tbody tr').length > 0;
+
+            if (hasRow) {
+                $('#ogrenciTable').DataTable({
+                    responsive: true,
+                    autoWidth: false,
+                    pageLength: 10,
+                    lengthMenu: [5, 10, 25, 50],
+                    order: [[1, 'asc']],
+                    language: {
+                        url: "https://cdn.datatables.net/plug-ins/1.13.8/i18n/tr.json"
+                    },
+                    columnDefs: [
+                        { orderable: false, targets: [5] } // İşlemler sıralanmasın
+                    ]
+                });
+            }
+        });
+    </script>
 }
