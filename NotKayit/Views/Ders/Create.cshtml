@@ -1,0 +1,90 @@
+﻿@model NotKayit.Models.ViewModels.CreateDersTmlViewModel
+
+@{
+    ViewData["Title"] = "Yeni Ders";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2"> 
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right"> 
+                    <li class="breadcrumb-item active">Yeni Ders</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content">
+    <div class="container-fluid">
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 class="card-title">
+                            <i class="fas fa-plus-circle mr-2"></i> Ders Ekle
+                        </h3>
+                    </div>
+
+                    <form asp-action="Create" method="post">
+                        @Html.AntiForgeryToken()
+
+                        <div class="card-body">
+
+                            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                            <div class="form-group">
+                                <label asp-for="DersAd"></label>
+                                <input asp-for="DersAd" class="form-control" placeholder="Örn: Veri Tabanı Sistemleri" />
+                                <span asp-validation-for="DersAd" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label asp-for="KrediSayisi"></label>
+                                    <input asp-for="KrediSayisi" type="number" class="form-control" min="0" placeholder="Örn: 3" />
+                                    <span asp-validation-for="KrediSayisi" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group col-md-8">
+                                    <label asp-for="DersAlanKodTmlId">Ders Alanı</label>
+                                    <select asp-for="DersAlanKodTmlId" asp-items="Model.Alanlar" class="form-control">
+                                        <option value="">-- Seçiniz --</option>
+                                    </select>
+                                    <span asp-validation-for="DersAlanKodTmlId" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="callout callout-info mb-0">
+                                <p class="mb-0">
+                                    <i class="fas fa-info-circle mr-1"></i>
+                                    Kaydettiğin ders listeye otomatik eklenecek.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card-footer d-flex justify-content-between">
+                            <a asp-action="Index" class="btn btn-secondary">
+                                <i class="fas fa-arrow-left mr-1"></i> Listeye Dön
+                            </a>
+
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-save mr-1"></i> Kaydet
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,61 @@
+﻿@model IEnumerable<NotKayit.Models.ViewModels.DersTmlViewModel>
+
+@{
+    ViewData["Title"] = "Dersler";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content">
+    <div class="container-fluid">
+
+        <div class="card card-primary card-outline">
+            <div class="card-header">
+                <h3 class="card-title">
+                    <i class="fas fa-book mr-2"></i> Ders Listesi
+                </h3>
+
+                <div class="card-tools">
+                    <a asp-action="Create" class="btn btn-primary btn-sm">
+                        <i class="fas fa-plus mr-1"></i> Yeni Ders
+                    </a>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th style="width:80px">#</th>
+                            <th>Ders Adı</th>
+                            <th style="width:120px">Kredi</th>
+                            <th style="width:220px">Alan (Tür)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model != null && Model.Any())
+                        {
+                            foreach (var x in Model)
+                            {
+                                <tr>
+                                    <td>@x.Id</td>
+                                    <td>@x.DersAd</td>
+                                    <td>@x.KrediSayisi</td>
+                                    <td>@(string.IsNullOrWhiteSpace(x.DersAlanTur) ? "-" : x.DersAlanTur)</td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="4" class="text-center text-muted py-4">
+                                    Kayıt bulunamadı.
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</section>

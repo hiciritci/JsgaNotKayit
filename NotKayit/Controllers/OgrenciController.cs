@@ -22,7 +22,7 @@ namespace NotKayit.Controllers
         // 1) LIST
         public async Task<IActionResult> Index()
         {
-            var entities = await _context.OgrenciTml.AsNoTracking().ToListAsync();
+            var entities = await _context.OgrenciTml.Where(x=>x.Deleted==false).AsNoTracking().ToListAsync();
             var model = _mapper.Map<List<OgrenciTmlViewModel>>(entities);
             return View(model);
         }
@@ -92,8 +92,8 @@ namespace NotKayit.Controllers
         {
             var entity = await _context.OgrenciTml.FindAsync(id);
             if (entity == null) return NotFound();
-
-            _context.OgrenciTml.Remove(entity);
+            entity.Deleted = true; // Silme işlemi yerine silindi olarak işaretleme
+            _context.Update(entity); // Değişikliği kaydetmek için Update çağırıyoruz 
             await _context.SaveChangesAsync();
 
             return RedirectToAction(nameof(Index));
@@ -108,15 +108,7 @@ namespace NotKayit.Controllers
 
             var model = _mapper.Map<OgrenciTmlViewModel>(entity);
             return View(model);
-        }
-
-
-
-
-
-
-
-
+        } 
 
         // GET: /Ogrenci/AdresCreate
         public async Task<IActionResult> AdresCreate(long ogrenciId)
@@ -124,7 +116,7 @@ namespace NotKayit.Controllers
             var ogrenciExists = await _context.OgrenciTml.AnyAsync(x => x.Id == ogrenciId);
             if (!ogrenciExists) return NotFound("Öğrenci bulunamadı.");
 
-            var adresler = await _context.Set<OgrenciAdres>() // <-- senin adres entity adın neyse onu yaz
+            var adresler = await _context.Set<OgrenciAdres>() 
                 .AsNoTracking()
                 .Where(x => x.OgrenciTmlId == ogrenciId)
                 .OrderByDescending(x => x.Id)
