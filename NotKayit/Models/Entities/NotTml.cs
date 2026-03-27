@@ -4,9 +4,9 @@
     {
         public int Id { get; set; }
 
-        public int OgrenciTmlId { get; set; }
+        public long OgrenciTmlId { get; set; }
         public int DersId { get; set; }
-        public int NotKodTmlId { get; set; }
+        public long NotKodTmlId { get; set; }
 
         public double Deger { get; set; }
 

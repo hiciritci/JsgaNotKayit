@@ -4,7 +4,33 @@
     ViewData["Title"] = "Öğrenci Listesi";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@section Styles {
+    <link rel="stylesheet" href="~/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" href="~/plugins/datatables-responsive/css/responsive.bootstrap4.min.css" />
 
+    <style>
+        #ogrenciTable td,
+        #ogrenciTable th {
+            vertical-align: middle;
+        }
+
+        .islem-grup {
+            display: flex;
+            justify-content: center;
+            gap: 4px;
+        }
+
+            .islem-grup .btn {
+                min-width: 34px;
+            }
+
+        @@media (max-width: 768px) {
+            .islem-grup {
+                justify-content: center;
+            }
+        }
+    </style>
+}
 <div class="row">
     <div class="col-12">
 
@@ -16,76 +42,91 @@
 
                 <div class="card-tools">
                     <a asp-action="Create" class="btn btn-primary btn-sm">
-                        <i class="fas fa-plus"></i> Yeni Öğrenci
+                        <i class="fas fa-plus mr-1"></i> Yeni Öğrenci
                     </a>
                 </div>
             </div>
 
             <div class="card-body">
-                <table id="ogrenciTable" class="table table-bordered table-hover table-striped">
-                    <thead>
-                        <tr>
-                            <th style="width:60px">#</th>
-                            <th>Adı</th>
-                            <th>Soyadı</th>
-                            <th style="width:140px">Doğum Tarihi</th> 
-                            <th class="text-center" style="width:360px">İşlemler</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        @{
-                            int i = 1;
-                        }
-                        @foreach (var ogrenci in Model ?? Enumerable.Empty<NotKayit.Models.ViewModels.OgrenciTmlViewModel>())
-                        {
+                <div class="table-responsive">
+                    <table id="ogrenciTable" class="table table-bordered table-hover table-striped">
+                        <thead>
                             <tr>
-                                <td>@i</td>
-                                <td>@ogrenci.Ad</td>
-                                <td>@ogrenci.Soyad</td>
-                                <td>@ogrenci.DogumTarihi.ToString("dd.MM.yyyy")</td>
-                                <td class="text-center">
-                                    <div class="d-flex justify-content-center flex-wrap gap-1">
-
-                                        <a asp-action="Details"
-                                           asp-route-id="@ogrenci.Id"
-                                           class="btn btn-primary btn-sm px-4 mr-2"
-                                           title="Görüntüle">
-                                            <i class="fas fa-eye"></i>
-                                        </a>
-
-                                        <a asp-action="Edit"
-                                           asp-route-id="@ogrenci.Id"
-                                           class="btn btn-warning btn-sm px-4 mr-2"
-                                           title="Düzenle">
-                                            <i class="fas fa-edit"></i>
-                                        </a>
-
-                                        <a asp-controller="Ogrenci"
-                                           asp-action="AdresCreate"
-                                           asp-route-ogrenciId="@ogrenci.Id"
-                                           class="btn btn-info btn-sm px-4 mr-2"
-                                           title="Adresler">
-                                            <i class="fas fa-map-marker-alt"></i>
-                                        </a>
-
-                                        <a asp-action="Delete"
-                                           asp-route-id="@ogrenci.Id"
-                                           class="btn btn-danger btn-sm px-4"
-                                           onclick="return confirm('Bu kaydı silmek istediğinize emin misiniz?');"
-                                           title="Sil">
-                                            <i class="fas fa-trash"></i>
-                                        </a>
-
-                                    </div>
-                                </td>
+                                <th style="width:60px">#</th>
+                                <th>Adı</th>
+                                <th>Soyadı</th>
+                                <th style="width:140px">Doğum Tarihi</th>
+                                <th class="text-center" style="width:260px">İşlemler</th>
                             </tr>
-                            i++;
-                        }
-                    </tbody>
-                </table>
+                        </thead>
 
-                @* Model boşsa DataTables yerine bu uyarı gözüksün *@
+                        <tbody>
+                            @{
+                                int i = 1;
+                            }
+                            @foreach (var ogrenci in Model ?? Enumerable.Empty<NotKayit.Models.ViewModels.OgrenciTmlViewModel>())
+                            {
+                                <tr>
+                                    <td>@i</td>
+                                    <td>@ogrenci.Ad</td>
+                                    <td>@ogrenci.Soyad</td>
+                                    <td>@ogrenci.DogumTarihi.ToString("dd.MM.yyyy")</td>
+                                    <td class="text-center">
+                                        <div class="btn-group btn-group-sm flex-wrap islem-grup" role="group">
+                                            <a asp-controller="Not"
+                                               asp-action="Create"
+                                               asp-route-ogrenciId="@ogrenci.Id"
+                                               class="btn btn-success"
+                                               title="Not Ekle">
+                                                <i class="fas fa-plus"></i>
+                                            </a>
+
+                                            <a asp-controller="Not"
+                                               asp-action="Index"
+                                               asp-route-ogrenciId="@ogrenci.Id"
+                                               class="btn btn-info"
+                                               title="Notları Listele">
+                                                <i class="fas fa-list"></i>
+                                            </a>
+
+                                            <a asp-action="Details"
+                                               asp-route-id="@ogrenci.Id"
+                                               class="btn btn-primary"
+                                               title="Görüntüle">
+                                                <i class="fas fa-eye"></i>
+                                            </a>
+
+                                            <a asp-action="Edit"
+                                               asp-route-id="@ogrenci.Id"
+                                               class="btn btn-warning"
+                                               title="Düzenle">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+
+                                            <a asp-controller="Ogrenci"
+                                               asp-action="AdresCreate"
+                                               asp-route-ogrenciId="@ogrenci.Id"
+                                               class="btn btn-secondary"
+                                               title="Adres">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </a>
+
+                                            <a asp-action="Delete"
+                                               asp-route-id="@ogrenci.Id"
+                                               class="btn btn-danger"
+                                               onclick="return confirm('Bu kaydı silmek istediğinize emin misiniz?');"
+                                               title="Sil">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                i++;
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
                 @if (Model == null || !Model.Any())
                 {
                     <div class="alert alert-info mt-3 mb-0">
@@ -103,14 +144,9 @@
     </div>
 </div>
 
-@section Styles {
-    <!-- DataTables -->
-    <link rel="stylesheet" href="~/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css" />
-    <link rel="stylesheet" href="~/plugins/datatables-responsive/css/responsive.bootstrap4.min.css" />
-}
+
 
 @section Scripts {
-    <!-- DataTables -->
     <script src="~/plugins/datatables/jquery.dataTables.min.js"></script>
     <script src="~/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
     <script src="~/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
@@ -118,7 +154,6 @@
 
     <script>
         $(function () {
-            // Model boşsa tabloyu datatable yapmaya gerek yok
             var hasRow = $('#ogrenciTable tbody tr').length > 0;
 
             if (hasRow) {
@@ -132,7 +167,7 @@
                         url: "https://cdn.datatables.net/plug-ins/1.13.8/i18n/tr.json"
                     },
                     columnDefs: [
-                        { orderable: false, targets: [5] } // İşlemler sıralanmasın
+                        { orderable: false, searchable: false, targets: [4] }
                     ]
                 });
             }

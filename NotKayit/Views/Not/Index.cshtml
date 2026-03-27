@@ -1,0 +1,71 @@
+﻿@model NotKayit.Models.ViewModels.OgrenciNotListViewModel
+
+@{
+    ViewData["Title"] = "Öğrenci Notları";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content">
+    <div class="container-fluid">
+
+        <div class="card card-info card-outline">
+            <div class="card-header">
+                <h3 class="card-title">
+                    <i class="fas fa-user-graduate mr-2"></i>
+                    @Model.OgrenciAdSoyad - Not Listesi
+                </h3>
+
+                <div class="card-tools">
+                    <a asp-controller="Not"
+                       asp-action="Create"
+                       asp-route-ogrenciId="@Model.OgrenciId"
+                       class="btn btn-success btn-sm">
+                        <i class="fas fa-plus mr-1"></i> Yeni Not Ekle
+                    </a>
+
+                    <a asp-controller="Ogrenci"
+                       asp-action="Index"
+                       class="btn btn-secondary btn-sm">
+                        <i class="fas fa-arrow-left mr-1"></i> Geri Dön
+                    </a>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <table class="table table-bordered table-hover table-striped">
+                    <thead>
+                        <tr>
+                            <th style="width:80px">#</th>
+                            <th>Ders</th>
+                            <th>Not Türü</th>
+                            <th style="width:150px">Not Değeri</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.Notlar != null && Model.Notlar.Any())
+                        {
+                            foreach (var item in Model.Notlar)
+                            {
+                                <tr>
+                                    <td>@item.Id</td>
+                                    <td>@item.DersAd</td>
+                                    <td>@item.NotTur</td>
+                                    <td>@item.Deger</td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="4" class="text-center text-muted">
+                                    Bu öğrenciye ait not kaydı bulunamadı.
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</section>

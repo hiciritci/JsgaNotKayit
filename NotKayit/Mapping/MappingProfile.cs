@@ -10,6 +10,10 @@ namespace NotKayit.Mapping
             CreateMap<OgrenciTml, OgrenciTmlViewModel>().ReverseMap(); 
             CreateMap<DersTml, CreateDersTmlViewModel>().ReverseMap();
             CreateMap<DersTml,DersTmlViewModel >().ReverseMap();
+            CreateMap<NotCreateViewModel,NotTml>();
+            CreateMap<NotTml, OgrenciNotItemVm>()
+           .ForMember(d => d.DersAd, o => o.MapFrom(s => s.Ders.DersAd))
+           .ForMember(d => d.NotTur, o => o.MapFrom(s => s.NotKod.Tur));
         }
     }
 }

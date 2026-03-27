@@ -820,13 +820,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NotKayit.qv5x0dkbhq.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-BvC0KyWZWf5uo3La23VeUmx3q0QBSMsgXwNqTreoq0g="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1126"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022BvC0KyWZWf5uo3La23VeUmx3q0QBSMsgXwNqTreoq0g=\u0022"},{"Name":"Last-Modified","Value":"Wed, 04 Feb 2026 19:28:14 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1126"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022BvC0KyWZWf5uo3La23VeUmx3q0QBSMsgXwNqTreoq0g=\u0022"},{"Name":"Last-Modified","Value":"Fri, 13 Mar 2026 07:20:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/NotKayit/NotKayit.qv5x0dkbhq.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\NotKayit.qv5x0dkbhq.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qv5x0dkbhq"},{"Name":"integrity","Value":"sha256-BvC0KyWZWf5uo3La23VeUmx3q0QBSMsgXwNqTreoq0g="},{"Name":"label","Value":"_content/NotKayit/NotKayit.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1126"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022BvC0KyWZWf5uo3La23VeUmx3q0QBSMsgXwNqTreoq0g=\u0022"},{"Name":"Last-Modified","Value":"Wed, 04 Feb 2026 19:28:14 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1126"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022BvC0KyWZWf5uo3La23VeUmx3q0QBSMsgXwNqTreoq0g=\u0022"},{"Name":"Last-Modified","Value":"Fri, 13 Mar 2026 07:20:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/NotKayit/pages/calendar.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\pages\calendar.html'))</AssetFile>
